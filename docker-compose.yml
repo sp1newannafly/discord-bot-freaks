@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  discord-bot-freaks:
+    build: .
+    image: discord-bot-freaks
+    container_name: discord-bot-freaks
+    env_file:
+      - .env
+    restart: unless-stopped
