@@ -1,6 +1,7 @@
 from src import bot
 from dotenv import load_dotenv
 import sys
+import keep_alive
 
 def check_version() -> None:
     import pkg_resources
@@ -28,4 +29,4 @@ def check_version() -> None:
 if __name__ == '__main__': 
     check_version()
     bot.run_discord_bot()
-    
+keep_alive.keep_alive()
